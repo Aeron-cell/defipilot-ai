@@ -1,0 +1,14 @@
+[project]
+name = "llm-posttraining-portfolio"
+version = "0.1.0"
+description = "Hands-on LLM post-training portfolio for finance/Excel agents"
+requires-python = ">=3.10"
+dependencies = ["pandas>=2.2", "pydantic>=2.7", "numpy>=1.26"]
+
+[project.optional-dependencies]
+train = ["torch>=2.2", "transformers>=4.45", "datasets>=2.20", "trl>=0.11", "peft>=0.12", "accelerate>=0.34"]
+
+authors = [{name = "Aeron-cell"}]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
